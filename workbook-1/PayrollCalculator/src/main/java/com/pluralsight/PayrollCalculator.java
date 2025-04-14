@@ -22,7 +22,7 @@ public class PayrollCalculator {
 
         // Calculated Gross Pay
         double grossPay = workHours * hourlyRate;
-        System.out.println("Your Gross Pay for this Week is $" + grossPay);
+        System.out.println("Your Gross Pay for this Week is $" + String.format("%.2f", grossPay));
 
     }
 }

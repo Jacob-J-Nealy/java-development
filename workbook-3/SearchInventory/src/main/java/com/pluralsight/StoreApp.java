@@ -6,21 +6,21 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+// How to Read am Excel File and Print/ Display the Information from it
+
 public class StoreApp {
     public static void main(String[] args) {
 
-          List<Product> inventory = getInventory();
+        List<Product> inventory = getInventory();
 
         listAllProducts(inventory);
 
-        readPrintDataFromFile();
 
     }
 
 
     public static List<Product> getInventory() {
         List<Product> inventory = new ArrayList<>();
-
 //        inventory.add(new Product(1, 19.99, "Shirt"));
 //        inventory.add(new Product(2, 19.99, "Pants"));
 //        inventory.add(new Product(3, 19.99, "Shoes"));
@@ -60,7 +60,4 @@ public class StoreApp {
         }
     }
 
-    public static void readPrintDataFromFile() {
-
-    }
 }

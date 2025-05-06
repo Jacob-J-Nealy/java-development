@@ -64,13 +64,13 @@ public class Employee {
         double duration = time - startTime;
         hoursWorked += duration;
         startTime = 0;
-        
+
     }
 
 
     public void punchOut(double time) {
         double duration = time - startTime;
-        hoursWorked += duration;
+        hoursWorked += duration; // same as hoursWorked = hoursWorked + duration
         startTime = 0;
     }
 

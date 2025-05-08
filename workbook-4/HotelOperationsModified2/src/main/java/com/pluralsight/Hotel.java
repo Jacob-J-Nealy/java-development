@@ -12,6 +12,9 @@ public class Hotel {
     private int bookedBasicRooms;
 
     // Constructor 1 (int, int)
+    /*
+
+     */
     public Hotel(String name, int numberOfSuites, int numberOfRooms) {
         this.name = name;
         this.numberOfRooms = numberOfRooms;
@@ -62,7 +65,7 @@ public class Hotel {
         return numberOfRooms - bookedBasicRooms;
     }
 
-    public boolean bookRoom() {
+    public boolean bookRoom(int numberOfRooms, boolean isSuite) {
         if (numberOfRooms <= 0) {
             return false;
         }

@@ -45,11 +45,20 @@ public class Vehicle extends Asset {
     public double getValue() {
 
         int currentYear = LocalDate.now().getYear();
+        int age = currentYear - year;
+        double value = 0.0;
 
-        if (currentYear <= 3 && currentYear >= 0) {
-            currentYear
+        if (age <= 3 && currentYear >= 0) {
+            for (int i = 0; i < age; i++) {
+                value = 0.94 * getOriginalCost();
+            }
+        } else if (age <=6) {
+            for (int i = 0; i < age; i++) {
+                value = 0.92 * getOriginalCost();
+            }
+        } else if (age <= 10) {
+
         }
-
 
 
         // A car's value is determined as

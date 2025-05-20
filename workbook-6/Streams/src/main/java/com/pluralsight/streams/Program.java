@@ -43,6 +43,12 @@ public class Program {
 
         System.out.println("\nAverage Age: " + calculateAverageAge(dragonballCharacters));
 
+        int oldestAge = findOldestAge(dragonballCharacters);
+        System.out.println("\nOldest Age: " + oldestAge);
+
+        int youngestAge = findYoungestAge(dragonballCharacters);
+        System.out.println("\nYoungest Age: " + youngestAge);
+
 
     }
 
@@ -74,6 +80,27 @@ public class Program {
 
         return (int) Math.round((double) totalAge / dragonballCharacters.size());
     }
+
+    private static int findOldestAge(List<Person> dragonballCharacters) {
+        int maxAge = Integer.MIN_VALUE;
+        for (Person person : dragonballCharacters) {
+            if (person.getAge() > maxAge)
+            maxAge = person.getAge();
+        }
+
+        return maxAge;
+    }
+
+    private static int findYoungestAge(List<Person> dragonballCharacters) {
+        int minAge = Integer.MAX_VALUE;
+        for (Person person : dragonballCharacters) {
+            if (person.getAge() < minAge)
+                minAge = person.getAge();
+        }
+
+        return minAge;
+    }
+
 
 
 

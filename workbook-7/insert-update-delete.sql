@@ -35,6 +35,9 @@ left join suppliers s on p.SupplierID = s.SupplierID;
 
 
 -- Question 4: 4. Raise the price of your new product by 15%.
+update products
+set UnitPrice = UnitPrice * 1.15;
+
 
 -- Question 5: List the products and prices of all products from that supplier.
 

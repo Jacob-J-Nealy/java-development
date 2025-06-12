@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataManager {
+
+    // Create this
     private BasicDataSource dataSource;
 
     // Constructor
